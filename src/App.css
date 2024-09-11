@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+
+:root {
+    --primary-color: #007A3D; 
+    --secondary-color: #CE1126;
+    --primary-font: rgba(0, 0, 0, 0.6);
+    --background-overlay: rgba(0, 0, 0, 0.6); 
+    --input-bg: rgba(255, 255, 255, 0.9); 
+    --input-border: #007A3D; 
+    --input-focus-border: #b85863; 
+    --icon-color: #CE1126; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: var(--primary-font);
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+header {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+span {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: var(--input-focus-border);
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: darken(var(--secondary-color), 10%);
+}
+
+.icon {
+    color: var(--icon-color);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form-container {
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+    background-color: var(--background-overlay);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+        border-radius: 0;
+    }
+}

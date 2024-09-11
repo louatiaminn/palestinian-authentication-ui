@@ -1,0 +1,200 @@
+.loginwrapper {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    font-family: var(--primary-font);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('https://w0.peakpx.com/wallpaper/991/621/HD-wallpaper-palestine-gaza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.loginwrapper .loginform {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.loginwrapper .loginform form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.loginwrapper header {
+    color: #CE1126; 
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.loginwrapper span {
+    color: #FFFFFF; 
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.loginwrapper .input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.loginwrapper .flex-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.loginwrapper .flex-fields .input-field {
+    width: 48%;
+}
+
+.loginwrapper .input-field .input {
+    font-family: var(--primary-font);
+    height: 40px;
+    border: 2px solid #007A3D;
+    border-radius: 8px;
+    padding: 10px 10px 10px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s;
+    text-align: left;
+}
+
+.loginwrapper .input-field .input:focus {
+    border-color: #CE1126;
+}
+
+.loginwrapper .input-field i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #CE1126; 
+}
+
+.loginwrapper .input-field p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+}
+
+
+
+.loginwrapper .submit-field {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.loginwrapper .submit {
+    font-family: var(--primary-font);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    height: 45px;
+    padding: 0 20px;
+    outline: none;
+    width: 48%;
+    background: #007A3D;
+    color: #FFFFFF; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 45px;
+}
+
+.loginwrapper .submit:hover {
+    background: #00592C; /* Darker green on hover */
+}
+
+.loginwrapper .create-account {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0;
+    text-align: center;
+    color: #FFFFFF; /* White text */
+}
+
+.loginwrapper .bottom {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin: 10px 5px 0 0;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+.loginwrapper .bottom ::hover{
+        color: #fff;
+        box-shadow: inset 200px 0 0 0 #54b3d6;;
+}
+
+
+.loginwrapper label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .loginwrapper header {
+        margin-bottom: 20px;
+    }
+
+    .loginwrapper .loginform {
+        width: 90%;
+        min-height: 100vh;
+        border-radius: unset;
+        padding: 20px;
+    }
+
+    .loginwrapper .loginform form {
+        gap: 10px;
+    }
+
+    .loginwrapper .submit {
+        padding: 0;
+    }
+
+    .loginwrapper .create-account {
+        padding: 13px 0;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .loginwrapper .flex-fields {
+        display: flex;
+        justify-content: unset;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .loginwrapper .flex-fields .input-field {
+        width: unset;
+    }
+
+    .loginwrapper .submit-field {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .loginwrapper .submit {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
